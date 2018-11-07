@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:fitsSystemWindows="true"
+    android:id="@+id/Relative_layout1"
+    android:paddingTop="5dp"
+    android:background="#000000"
+    tools:context="com.example.ase.flashlightforandroid.MainActivity"
+    android:elevation="3dp">
+
+    <ImageButton
+        android:id="@+id/flashlightSwitch"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/power_off"
+        android:background="@drawable/shape2"
+        android:contentDescription="@null"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    <LinearLayout
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:foregroundGravity="bottom|center"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/linearLayout">
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/Color_red"
+            android:src="@drawable/red_icon"
+            android:scaleType="fitXY"
+            android:background="@drawable/shape1"
+            />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/Color_blue"
+            android:src="@drawable/blue_icon"
+            android:scaleType="fitXY"
+            android:nextFocusRight="@id/Color_red"
+            android:background="@drawable/shape1"
+            />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/Color_blue_green"
+            android:src="@drawable/blue_green_icon"
+            android:scaleType="fitXY"
+            android:nextFocusRight="@id/Color_blue"
+            android:background="@drawable/shape1"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/Color_bing"
+            android:src="@drawable/bing_icon"
+            android:scaleType="fitXY"
+            android:nextFocusRight="@id/Color_blue_green"
+            android:background="@drawable/shape1"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/Color_orange"
+            android:src="@drawable/oramg_icon"
+            android:scaleType="fitXY"
+            android:nextFocusRight="@id/Color_blue_green"
+            android:background="@drawable/shape1"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/Color_Tim_Luc"
+            android:src="@drawable/tim_luc_icon"
+            android:scaleType="fitXY"
+            android:nextFocusRight="@id/Color_blue_green"
+            android:background="@drawable/shape1"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/Color_Yellow"
+            android:src="@drawable/yellow_icon"
+            android:scaleType="fitXY"
+            android:nextFocusRight="@id/Color_blue_green"
+            android:background="@drawable/shape1"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/Color_Green"
+            android:src="@drawable/green_icon"
+            android:scaleType="fitXY"
+            android:nextFocusRight="@id/Color_blue_green"
+            android:background="@drawable/shape1"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/Color_White"
+            android:src="@drawable/white_icon"
+            android:scaleType="fitXY"
+            android:nextFocusRight="@id/Color_blue_green"
+            android:background="@drawable/shape1"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/Color_Black"
+            android:src="@drawable/black_icon"
+            android:scaleType="fitXY"
+            android:nextFocusRight="@id/Color_blue_green"
+            android:background="@drawable/shape1"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/button_blink"
+        android:src="@drawable/icon_blink_button"
+        android:scaleType="fitXY"
+        android:nextFocusRight="@id/Color_blue_green"
+        android:background="@drawable/shape1"
+        android:layout_below="@+id/flashlightSwitch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp" />
+
+</RelativeLayout>
